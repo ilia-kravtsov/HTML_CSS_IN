@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2; /* высота будет равна высоте текста и 2 десятых от нее*/
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #2F2E41;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* vh - view height видимая высота окна браузера*/
+}
+
+header {
+    height: 80px;
+}
+
+.wrapper_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header,
+footer {
+    background-color: #6C63FF;
+}
+
+.btn_login {
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+section {
+    padding: 100px 0;
+    flex-grow: 1;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-size: 22px;
+    max-width: 280px;
+}
+
+.btn_login, h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+footer img {
+    margin-right: 10px;   
+}
+
+.card_wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 2px solid #E7E7E7;
+    border-radius: 5px;
+    padding: 46px 20px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow:1;
+}
+
+.card_img {
+    margin: 40px 0 36px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    padding: 20px 100px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+} 
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 28px;
+    }
+    footer {
+        padding: 20px 39px 20px 15px; 
+    }
+    li {
+        width: 115px;
+        height: 40px;
+    }
+} 
+/* 
+_________________________________________________ Flex
+
+1 Свойство display: flex; нужно указывать именно на первого родителя
+относительно потомка к которому хотим применить flex 
+действует только на первых потомков
+
+1140 - 1200 px - max width recommend
+
+Для каждого большой секции нужен container
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    border: 1px solid red;
+    margin: 0 auto;
+} - внутрь каждого большого элемента header section footer
+
+Для каждой группы элементов нужен wrapper 
+
+.wrapper_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+} - флексовый контейнер для флексовых элементов 
+
+gap - отступы именно между элементами не по краям
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 28px;
+    }
+    footer {
+        padding: 20px 39px 20px 15px; 
+    }
+    li {
+        width: 115px;
+        height: 40px;
+    }
+} 
+
+Для регулировки параметров при изменении размера экрана
+*/

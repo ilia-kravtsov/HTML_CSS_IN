@@ -6,74 +6,85 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML_CSS_IN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <a href="#">
-            <img src="" alt="">
-        </a>
-        <button>login</button>
+        <div class="container">
+            <div class="wrapper_header">
+                <a href="#">
+                    <img src="assets/images/logo.svg" alt="logo it incubator">
+                </a>
+                <button class="btn_login">login</button>
+            </div>
+        </div>  
     </header>
     <section>
-        <h1>html+css. верстка</h1>
-        <div>
-            <h2>
-                теория html + css.
-                Структура приложения
-            </h2>
-            <img src="" alt="">
-            <p>
-                Проговорим о том, что такое <span>HTML и CSS</span>.  Создадим проект и рассмотрим его файловую структуру. Научимся работать с макетом в Figma. Изучим 13 самых используемых тегов. Напишем HTML-структуру нашего приложения.
-            </p>
-        </div>
-        <div>
-            <h2>
-                Стилизация 
-                HTML-элементов
-            </h2>
-            <img src="" alt="">
-            <p>
-                Подключим шрифты. Рассмотрим самый правильный способ добавления стилей. Рассмотрим синтаксис написания стилей. Напишем стили для элементов. Изучим популярные <span>свойства css</span>. Посмотрим как располагать элементы, используя Flexbox.
-            </p>
-        </div>
-        <div>
-            <h2>
-                Адаптив.
-                Медиазапросы
-            </h2>
-            <img src="" alt="">
-            <p>
-                Сделаем наше приложение адаптивным, чтобы оно так же хорошо выглядело на планшетах и мобильных телефонах. Рассмотрим как работает св-во flex-wrap. Научимся делать <span>адаптив</span>, используя медиазапросы.
-            </p>
-        </div>
+        <div class="container">
+            <h1>html+css. верстка</h1>
+            <div class="card_wrapper">
+                <div class="card">
+                    <h2>
+                        теория html + css. Структура приложения
+                    </h2>
+                    <img class='card_img' src="assets/images/body_images/img-1.svg" alt="HTML CSS a man">
+                    <p>
+                        Проговорим о том, что такое <span class="bold">HTML и CSS</span>.  Создадим проект и рассмотрим его файловую структуру. Научимся работать с макетом в Figma. Изучим 13 самых используемых тегов. Напишем HTML-структуру нашего приложения.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Стилизация<br>HTML-элементов
+                    </h2>
+                    <img class='card_img' src="assets/images/body_images/img-2.svg" alt="a woman and a man">
+                    <p>
+                        Подключим шрифты. Рассмотрим самый правильный способ добавления стилей. Рассмотрим синтаксис написания стилей. Напишем стили для элементов. Изучим популярные <span class="bold">свойства css</span>. Посмотрим как располагать элементы, используя Flexbox.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Адаптив.<br> Медиазапросы
+                    </h2>
+                    <img class='card_img' src="assets/images/body_images/img-3.svg" alt="adaptiv">
+                    <p>
+                        Сделаем наше приложение адаптивным, чтобы оно так же хорошо выглядело на планшетах и мобильных телефонах. Рассмотрим как работает св-во flex-wrap. Научимся делать <span class="bold">адаптив</span>, используя медиазапросы.
+                    </p>
+                </div>
+            </div>
+     </div>
     </section>
     <footer>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="" alt="">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="">
-                    <span>All Courses </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="">
-                    <span>Sandbox </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="">
-                    <span>Contacts</span>
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li>
+                    <a class="footer_a" href="https://it-incubator.io/" target="_blank">
+                        <img class="footer_a_item" src="assets/images/footer_icons/home-icon.svg" alt="">
+                        <span class="footer_a_item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer_a" href="https://it-incubator.io/" target="_blank">
+                        <img class="footer_a_item" src="assets/images/footer_icons/computer-icon.svg" alt="">
+                        <span class="footer_a_item">All Courses </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer_a" href="https://sandbox.it-incubator.io/choice" target="_blank">
+                        <img class="footer_a_item" src="assets/images/footer_icons/sandbox-icon.svg" alt="">
+                        <span class="footer_a_item">Sandbox </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer_a" href="https://it-incubator.io/" target="_blank">
+                        <img class="footer_a_item" src="assets/images/footer_icons/map-pointer-icon.svg" alt="">
+                        <span class="footer_a_item">Contacts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
